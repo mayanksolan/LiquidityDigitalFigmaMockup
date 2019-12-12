@@ -10,3 +10,26 @@ img {
   top: 32px;
   left: 32px;
 }
+
+.menu-list {
+  position: absolute;
+  left: 0px;
+  top: 200px;
+}
+
+.menu-item {
+  width: 224px;
+  height: 36px;
+  padding-left: 28px;
+  padding-top: 20px;
+}
+
+.contact-us {
+  position: absolute;
+  width: 224px;
+  height: 64px;
+  left: 0px;
+  top: 960px;
+  padding-left: 28px;
+  font-size: small;
+}
