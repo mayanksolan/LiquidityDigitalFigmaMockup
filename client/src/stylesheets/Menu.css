@@ -24,6 +24,9 @@ img {
   height: 36px;
   padding-left: 28px;
   padding-top: 20px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .contact-us {
@@ -33,5 +36,7 @@ img {
   left: 0px;
   top: 960px;
   padding-left: 28px;
-  font-size: x-small;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
 }
