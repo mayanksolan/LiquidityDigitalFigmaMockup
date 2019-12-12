@@ -1,3 +1,5 @@
 .App {
   margin: 0;
+  display: grid;
+  grid-template-columns: 224px 1216px;
 }

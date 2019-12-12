@@ -21,14 +21,14 @@ export default class Menu extends Component {
     const email = "support@digital.com";
 
     return (
-      <div className="container">
+      <div className="menu-container">
         <img src={liquidity_logo} alt="liquidity logo" />
         <div className="menu-list">
           {this.state.navArr.map((item, idx) => {
             var is_selected = this.state.selectedItem === idx;
             return (
               <MenuItem
-                key={item.idx}
+                key={idx}
                 name={item}
                 onClick={() => this.clickHandler(idx)}
                 isSelected={is_selected}

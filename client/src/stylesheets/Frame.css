@@ -1,0 +1,36 @@
+.frame-container {
+  /* float: left;
+  width: 1216px; */
+  height: 1024px;
+  background-color: #fafafb;
+}
+
+.group {
+  position: absolute;
+  width: 128px;
+  height: 40px;
+  left: 1056px;
+  top: 24px;
+}
+
+.user-group {
+  position: absolute;
+  width: 103px;
+  height: 20px;
+  left: 0px;
+  top: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.vector-group {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  left: 105px;
+  top: 10px;
+}
