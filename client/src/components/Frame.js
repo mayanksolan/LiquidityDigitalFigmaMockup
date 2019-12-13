@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import "../stylesheets/Frame.css";
+import User from "./User";
 
 export default class Frame extends Component {
   render() {
+    //const { userId, userName } = this.props.issuance;
+    console.log(this.props.issuance);
     return (
       <div className="frame-container">
-        <div className="group">
-          <div className="user-group">Alan Lambert</div>
-          <div className="vector-group">
-            <i className="fas fa-caret-down"></i>
-          </div>
-        </div>
+        <User user={this.props.user} />
       </div>
     );
   }
