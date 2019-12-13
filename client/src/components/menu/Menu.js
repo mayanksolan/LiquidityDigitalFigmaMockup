@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import liquidity_logo from "../assets/liquidity_logo.png";
-import "../stylesheets/Menu.css";
+import liquidity_logo from "../../assets/liquidity_logo.png";
+import "../../stylesheets/Menu.css";
 import MenuItem from "./MenuItem";
 
 export default class Menu extends Component {

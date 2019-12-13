@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Menu from "../src/components/Menu";
-import Frame from "../src/components/Frame";
+import Menu from "./components/menu/Menu";
+import Frame from "./components/frame/Frame";
 
 class App extends React.Component {
   constructor(props) {

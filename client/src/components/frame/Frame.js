@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../stylesheets/Frame.css";
+import "../../stylesheets/Frame.css";
 import User from "./User";
 import Tabs from "./Tabs";
 import Rectangle from "./Rectangle";
