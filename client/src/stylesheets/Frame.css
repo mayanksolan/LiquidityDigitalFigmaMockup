@@ -56,3 +56,152 @@ ul li {
 .arrow li:hover {
   background-color: red;
 }
+
+.frame-container .header {
+  position: absolute;
+  width: 476px;
+  height: 32px;
+  left: 315px;
+  top: 104px;
+  font-family: Arial;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.tabs {
+  position: absolute;
+  width: 1152px;
+  height: 28px;
+  left: 315px;
+  top: 160px;
+}
+
+.tabs .section1 {
+  position: absolute;
+  left: 0%;
+  right: 84.72%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.tabs .section2 {
+  position: absolute;
+  left: 15.28%;
+  right: 69.44%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.tabs .section3 {
+  position: absolute;
+  left: 30.56%;
+  right: 57.12%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.tabs .section4 {
+  position: absolute;
+  left: 42.88%;
+  right: 41.84%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.section-name {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #9295a0;
+  line-height: 26px;
+}
+
+.line {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 100%;
+  bottom: 0%;
+  border: 1px solid #e0e0e0;
+}
+
+span:hover .coloured-line {
+  border: 1px solid #2345c7;
+}
+
+.rectangle {
+  position: absolute;
+  width: 1152px;
+  height: 296px;
+  left: 315px;
+  top: 212px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.btn1 {
+  position: absolute;
+  width: 156px;
+  height: 32px;
+  left: 22px;
+  top: 8px;
+}
+
+.btn1-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 5.13%;
+  right: 79.49%;
+  top: 4px;
+  bottom: 4px;
+  color: #2345c7;
+}
+.btn1-text {
+  position: absolute;
+  left: 34px;
+  right: 8px;
+  top: 4px;
+  bottom: 4px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #2345c7;
+}
+
+.btn2 {
+  position: absolute;
+  width: 98px;
+  height: 32px;
+  left: 186px;
+  top: 8px;
+}
+
+.btn2-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 5.13%;
+  right: 79.49%;
+  top: 4px;
+  bottom: 4px;
+  color: #2345c7;
+}
+.btn2-text {
+  position: absolute;
+  left: 34px;
+  right: 8px;
+  top: 4px;
+  bottom: 4px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #2345c7;
+}
+
+.table-header {
+  position: absolute;
+  width: 1120px;
+  height: 48px;
+  left: 16px;
+  top: 48px;
+}
