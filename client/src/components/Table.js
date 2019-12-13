@@ -1,19 +1,37 @@
 import React, { Component } from "react";
+import TableItem from "./TableItem";
 
 export default class Table extends Component {
   render() {
     return (
       <div>
         <table>
-          <tr className="table-header">
-            <th>Name & Industry Type</th>
-            <th>Issuance Type</th>
-            <th>Target Raise</th>
-            <th>Pre-Money Valuation</th>
-            <th>Amount Raised</th>
-            <th>Location</th>
-            <th>Status</th>
-          </tr>
+          <tbody>
+            <tr>
+              <th className="table1Elem">Name & Industry Type</th>
+              <th>
+                Issuance Type<i className="fas fa-sort-down"></i>
+              </th>
+              <th>
+                Target Raise<i className="fas fa-sort-down"></i>
+              </th>
+              <th>
+                Pre-Money Valuation<i className="fas fa-sort-down"></i>
+              </th>
+              <th>
+                Amount Raised<i className="fas fa-sort-down"></i>
+              </th>
+              <th>
+                Location<i className="fas fa-sort-down"></i>
+              </th>
+              <th>
+                Status<i className="fas fa-sort-down"></i>
+              </th>
+            </tr>
+            {this.props.issuance.map(issueItem => (
+              <TableItem key={issueItem.issuanceId} issueItem={issueItem} />
+            ))}
+          </tbody>
         </table>
       </div>
     );

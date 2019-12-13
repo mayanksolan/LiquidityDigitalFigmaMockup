@@ -1,4 +1,4 @@
-import React, { Component, Button } from "react";
+import React, { Component } from "react";
 import Table from "./Table";
 
 export default class Rectangle extends Component {
@@ -6,14 +6,14 @@ export default class Rectangle extends Component {
     return (
       <div className="rectangle">
         <div className="btn1">
-          <i class="fas fa-plus btn1-icon"></i>
+          <i className="fas fa-plus btn1-icon"></i>
           <span className="btn1-text">Add Issuance</span>
         </div>
         <div className="btn2">
-          <i class="fas fa-filter btn2-icon"></i>
+          <i className="fas fa-filter btn2-icon"></i>
           <span className="btn2-text">Filters</span>
         </div>
-        <Table />
+        <Table issuance={this.props.issuance} />
       </div>
     );
   }

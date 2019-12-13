@@ -133,7 +133,7 @@ span:hover .coloured-line {
 .rectangle {
   position: absolute;
   width: 1152px;
-  height: 296px;
+  height: 400px;
   left: 315px;
   top: 212px;
   background: #ffffff;
@@ -198,10 +198,46 @@ span:hover .coloured-line {
   color: #2345c7;
 }
 
-.table-header {
+table {
   position: absolute;
   width: 1120px;
   height: 48px;
   left: 16px;
   top: 48px;
+}
+
+.table1Elem {
+  width: 296px;
+}
+
+th {
+  background-color: #fafafb;
+}
+
+th,
+td {
+  height: 48px;
+  text-align: left;
+  font-family: Arial;
+  font-size: 14px;
+  width: 132px;
+  padding: 0 4px;
+}
+
+th i {
+  position: absolute;
+  padding: 0 4px;
+  color: #9295a0;
+}
+
+.cirBlue {
+  font-size: 10px;
+  padding-right: 5px;
+  color: #2345c7;
+}
+
+.cirGreen {
+  font-size: 10px;
+  padding-right: 5px;
+  color: #20ba82;
 }

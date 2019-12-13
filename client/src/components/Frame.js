@@ -13,7 +13,7 @@ export default class Frame extends Component {
         <User user={this.props.user} />
         <div className="header">Deal Room</div>
         <Tabs />
-        <Rectangle />
+        <Rectangle issuance={this.props.issuance} />
       </div>
     );
   }
