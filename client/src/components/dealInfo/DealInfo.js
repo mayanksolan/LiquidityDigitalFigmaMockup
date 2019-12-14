@@ -12,7 +12,7 @@ export default class DealInfo extends Component {
   render() {
     return (
       <div className="dealInfo">
-        <button className="close">
+        <button className="close" onClick={this.props.closeClicked}>
           Close<i className="fas fa-times closeIcon"></i>
         </button>
         <Tabs />

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import Modal from "react-responsive-modal";
 import "./App.css";
 import Menu from "./components/menu/Menu";
 import Frame from "./components/frame/Frame";
@@ -165,30 +165,49 @@ class App extends React.Component {
           favorite: false
         }
       ],
-      selectedIssuanceId: null
+      selectedIssuanceId: null,
+      open: false
     };
   }
+
   clickIssuance = iId => {
-    this.setState({ selectedIssuanceId: iId });
+    this.setState(
+      {
+        selectedIssuanceId: iId,
+        open: true
+      },
+      () => console.log(this.state.backgroundColor)
+    );
+  };
+  closeClicked = () => {
+    this.setState({ selectedIssuanceId: null, open: false });
   };
   render() {
+    const { open } = this.state;
     const selectIssuance = this.state.issuance.filter(
       issua => issua.issuanceId === this.state.selectedIssuanceId
     );
     const finalIssuance =
       selectIssuance.length === 0 ? this.state.issuance[0] : selectIssuance[0];
     return (
-      <BrowserRouter>
-        <div className="App">
+      <div className="App">
+        <div>
           <Menu />
           <Frame
             issuance={this.state.issuance}
             user={this.state.user}
             clickIssuance={this.clickIssuance}
           />
-          <DealInfo issuance={finalIssuance} />
         </div>
-      </BrowserRouter>
+        {this.state.selectedIssuanceId !== null && (
+          <Modal open={open} onClose={this.closeClicked}>
+            <DealInfo
+              issuance={finalIssuance}
+              closeClicked={this.closeClicked}
+            />
+          </Modal>
+        )}
+      </div>
     );
   }
 }

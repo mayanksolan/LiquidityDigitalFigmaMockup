@@ -11,6 +11,9 @@ export default class Menu extends Component {
       selectedItem: null
     };
   }
+  componentDidMount() {
+    this.setState({ selectedItem: 0 });
+  }
 
   clickHandler = idx => {
     this.setState({ selectedItem: idx });
