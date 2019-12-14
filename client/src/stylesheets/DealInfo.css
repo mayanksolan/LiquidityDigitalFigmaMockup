@@ -108,3 +108,36 @@ span:hover .di-coloured-line {
   font-weight: bold;
   font-size: 16px;
 }
+
+.di_desc {
+  position: absolute;
+  width: 488px;
+  height: 102px;
+  left: 32px;
+  top: 212px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.di_desc_head {
+  position: absolute;
+  width: 196px;
+  height: 24px;
+  left: 16px;
+  top: 8px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.di_desc_text {
+  position: absolute;
+  width: 413px;
+  height: 46px;
+  left: 16px;
+  top: 40px;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+}
