@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Menu from "./components/menu/Menu";
 import Frame from "./components/frame/Frame";
+import DealInfo from "./components/dealInfo/DealInfo";
 
 class App extends React.Component {
   constructor(props) {
@@ -172,6 +173,7 @@ class App extends React.Component {
         <div className="App">
           <Menu />
           <Frame issuance={this.state.issuance} user={this.state.user} />
+          <DealInfo issuance={this.state.issuance} />
         </div>
       </BrowserRouter>
     );

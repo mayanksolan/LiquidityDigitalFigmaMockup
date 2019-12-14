@@ -25,7 +25,7 @@ export default class TableItem extends Component {
       <tr>
         <td className="table1Elem">
           <div>{name}</div>
-          <div>{industryType}</div>
+          <div className="industryType">{industryType}</div>
         </td>
         <td>{issuanceType}</td>
         <td>${targetRaise1}M</td>

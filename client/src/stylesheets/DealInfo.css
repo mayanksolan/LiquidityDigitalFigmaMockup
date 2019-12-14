@@ -1,0 +1,23 @@
+.close {
+  position: absolute;
+  width: 112px;
+  height: 24px;
+  left: 408px;
+  top: 16px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #b5b8c0;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.closeIcon {
+  padding-left: 10px;
+  color: #b5b8c0;
+  /* font-weight: lighter; */
+  /* font-size: large; */
+}

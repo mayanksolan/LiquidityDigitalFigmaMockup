@@ -3,3 +3,12 @@
   display: grid;
   grid-template-columns: 224px 1216px;
 }
+.dealInfo {
+  display: hidden;
+  position: absolute;
+  width: 551px;
+  height: 1024px;
+  left: 889px;
+  top: 0px;
+  background-color: white;
+}
