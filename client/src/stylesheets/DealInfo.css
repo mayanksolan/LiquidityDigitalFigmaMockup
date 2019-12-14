@@ -141,3 +141,166 @@ span:hover .di-coloured-line {
   font-size: 12px;
   line-height: 16px;
 }
+
+.req {
+  position: absolute;
+  width: 488px;
+  height: 247px;
+  left: 32px;
+  top: 330px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.req-head {
+  position: absolute;
+  width: 196px;
+  height: 24px;
+  left: 16px;
+  top: 8px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.req-grid1 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 48px;
+}
+
+.req-grid2 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 80px;
+}
+
+.req-grid3 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 112px;
+}
+
+.req-grid4 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 144px;
+}
+
+.req-grid5 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 176px;
+}
+
+.req-grid6 {
+  position: absolute;
+  width: 456px;
+  height: 32px;
+  left: 16px;
+  top: 208px;
+}
+
+.req-first {
+  position: absolute;
+  left: 0%;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  right: 50%;
+  padding-left: 2%;
+}
+
+.req-second {
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.doc-box1 {
+  position: absolute;
+  width: 488px;
+  height: 104px;
+  left: 32px;
+  top: 610px;
+}
+
+.doc-head1 {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.doc-box2 {
+  position: absolute;
+  width: 488px;
+  height: 104px;
+  left: 32px;
+  top: 746px;
+}
+
+.doc-head2 {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.down1 {
+  position: absolute;
+  width: 488px;
+  height: 32px;
+  left: 0px;
+  top: 32px;
+}
+
+.down2 {
+  position: absolute;
+  width: 488px;
+  height: 32px;
+  left: 0px;
+  top: 64px;
+}
+
+.doc-text-left {
+  float: left;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.fa-download {
+  padding: 0px 10px;
+}
+
+.doc-text-right {
+  float: right;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  text-decoration: underline;
+  color: #2345c7;
+  padding-right: 40px;
+}

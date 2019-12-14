@@ -3,6 +3,8 @@ import "../../stylesheets/DealInfo.css";
 import Tabs from "./Tabs";
 import Highlights from "./Highlights";
 import Description from "./Description";
+import Required from "./Required";
+import Documents from "./Documents";
 
 export default class DealInfo extends Component {
   render() {
@@ -14,6 +16,8 @@ export default class DealInfo extends Component {
         <Tabs />
         <Highlights issuance={this.props.issuance[0]} />
         <Description description={this.props.issuance[0].description} />
+        <Required issuance={this.props.issuance[0]} />
+        <Documents />
       </div>
     );
   }
