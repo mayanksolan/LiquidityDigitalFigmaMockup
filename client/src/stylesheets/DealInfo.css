@@ -304,3 +304,86 @@ span:hover .di-coloured-line {
   color: #2345c7;
   padding-right: 40px;
 }
+
+.src-box1 {
+  position: absolute;
+  width: 253px;
+  height: 84px;
+  left: 32px;
+  top: 882px;
+}
+
+.src-box2 {
+  position: absolute;
+  width: 253px;
+  height: 84px;
+  left: 32px;
+  top: 998px;
+}
+
+.src-box-head {
+  position: absolute;
+  width: 253px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.src-box-name {
+  position: absolute;
+  width: 195px;
+  height: 24px;
+  left: 0px;
+  top: 36px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.src-box-email {
+  position: absolute;
+  width: 195px;
+  height: 24px;
+  left: 0px;
+  top: 60px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 40px;
+  color: #9295a0;
+}
+
+.main-line {
+  position: absolute;
+  width: 488px;
+  height: 0px;
+  left: 33px;
+  top: 1138px;
+  border: 1px solid #e0e0e0;
+}
+
+.edit-main {
+  position: absolute;
+  width: 156px;
+  height: 32px;
+  left: 33px;
+  top: 1150px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  text-decoration: underline;
+  color: #2345c7;
+}
+
+.fa-pen {
+  padding: 0px 10px;
+}

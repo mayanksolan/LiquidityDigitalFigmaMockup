@@ -5,6 +5,8 @@ import Highlights from "./Highlights";
 import Description from "./Description";
 import Required from "./Required";
 import Documents from "./Documents";
+import SourcingPeople from "./SourcingPeople";
+import EditIssuance from "./EditIssuance";
 
 export default class DealInfo extends Component {
   render() {
@@ -18,6 +20,8 @@ export default class DealInfo extends Component {
         <Description description={this.props.issuance[0].description} />
         <Required issuance={this.props.issuance[0]} />
         <Documents />
+        <SourcingPeople issuance={this.props.issuance[0]} />
+        <EditIssuance />
       </div>
     );
   }
