@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../stylesheets/DealInfo.css";
+import Tabs from "./Tabs";
+import Highlights from "./Highlights";
 
 export default class DealInfo extends Component {
   render() {
@@ -8,6 +10,8 @@ export default class DealInfo extends Component {
         <button className="close">
           Close<i className="fas fa-times closeIcon"></i>
         </button>
+        <Tabs />
+        <Highlights issuance={this.props.issuance[0]} />
       </div>
     );
   }

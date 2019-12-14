@@ -18,6 +18,93 @@
 .closeIcon {
   padding-left: 10px;
   color: #b5b8c0;
-  /* font-weight: lighter; */
-  /* font-size: large; */
+}
+
+.di-tabs {
+  position: absolute;
+  width: 489px;
+  height: 28px;
+  left: 32px;
+  top: 76px;
+}
+
+.di-tabs .di-section1 {
+  position: absolute;
+  width: 244px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+}
+
+.di-tabs .di-section2 {
+  position: absolute;
+  width: 244px;
+  height: 28px;
+  left: 245px;
+  top: 0px;
+}
+
+.di-section-name {
+  font-weight: bold;
+  line-height: 26px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #9295a0;
+}
+
+.di-line {
+  position: absolute;
+  width: 486px;
+  height: 0px;
+  left: 0px;
+  top: 28px;
+  border: 1px solid #e0e0e0;
+}
+
+span:hover .di-coloured-line {
+  border: 1px solid #2345c7;
+}
+
+.high1 {
+  position: absolute;
+  width: 86px;
+  height: 44px;
+  left: 32px;
+  top: 136px;
+}
+
+.high2 {
+  position: absolute;
+  width: 102px;
+  height: 44px;
+  left: 150px;
+  top: 136px;
+}
+
+.high3 {
+  position: absolute;
+  width: 102px;
+  height: 44px;
+  left: 284px;
+  top: 136px;
+}
+
+.high4 {
+  position: absolute;
+  width: 110px;
+  height: 44px;
+  left: 410px;
+  top: 136px;
+}
+
+.high-head {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.high-val {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
 }
