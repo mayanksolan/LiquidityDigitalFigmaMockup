@@ -3,6 +3,7 @@ import React, { Component } from "react";
 export default class TableItem extends Component {
   render() {
     const {
+      issuanceId,
       name,
       industryType,
       issuanceType,
@@ -22,7 +23,10 @@ export default class TableItem extends Component {
         <i className="fas fa-circle cirGreen"></i>
       );
     return (
-      <tr>
+      <tr
+        onClick={() => this.props.clickIssuance(issuanceId)}
+        className="ti-tr"
+      >
         <td className="table1Elem">
           <div>{name}</div>
           <div className="industryType">{industryType}</div>

@@ -16,11 +16,11 @@ export default class DealInfo extends Component {
           Close<i className="fas fa-times closeIcon"></i>
         </button>
         <Tabs />
-        <Highlights issuance={this.props.issuance[0]} />
-        <Description description={this.props.issuance[0].description} />
-        <Required issuance={this.props.issuance[0]} />
+        <Highlights issuance={this.props.issuance} />
+        <Description description={this.props.issuance.description} />
+        <Required issuance={this.props.issuance} />
         <Documents />
-        <SourcingPeople issuance={this.props.issuance[0]} />
+        <SourcingPeople issuance={this.props.issuance} />
         <EditIssuance />
       </div>
     );

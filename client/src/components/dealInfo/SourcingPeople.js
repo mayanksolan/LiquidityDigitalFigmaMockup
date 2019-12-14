@@ -1,7 +1,6 @@
 import React from "react";
 
 function SourcingPeople(props) {
-  console.log(props.issuance.sourcingParty);
   return (
     <div>
       <div className="src-box1">

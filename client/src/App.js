@@ -20,16 +20,16 @@ class App extends React.Component {
           name: "Energy Infrastructure",
           industryType: "Financial Services",
           issuanceType: "Equity",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "Europe",
           status: "In Progress",
           description:
             "As such, Energy Infrastructure naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "05242019",
+          dateOfCreation: "2019-05-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 1000000000,
+          totalIssuedShares: 100000000,
           freeFloat: 1000000,
           pricePerShare: 100,
           sourcingParty: {
@@ -45,16 +45,16 @@ class App extends React.Component {
           name: "ABC",
           industryType: "Financial Services",
           issuanceType: "Investment Fund",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "U.S.",
           status: "In Progress",
           description:
             "As such, ABC naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "04192018",
+          dateOfCreation: "2019-04-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 2000000000,
+          totalIssuedShares: 200000000,
           freeFloat: 2000000,
           pricePerShare: 200,
           sourcingParty: {
@@ -70,16 +70,16 @@ class App extends React.Component {
           name: "Alternative Gas Extraction",
           industryType: "Space",
           issuanceType: "Debt",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "U.S.",
           status: "Closed",
           description:
             "As such, Alternative Gas Extraction naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "03172017",
+          dateOfCreation: "2018-03-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 3000000000,
+          totalIssuedShares: 300000000,
           freeFloat: 3000000,
           pricePerShare: 300,
           sourcingParty: {
@@ -95,16 +95,16 @@ class App extends React.Component {
           name: "Energy Services",
           industryType: "Financial Services",
           issuanceType: "Equity",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "Europe",
           status: "In Progress",
           description:
             "As such, Energy Infrastructure naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "05242019",
+          dateOfCreation: "2016-04-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 1000000000,
+          totalIssuedShares: 100000000,
           freeFloat: 1000000,
           pricePerShare: 100,
           sourcingParty: {
@@ -120,16 +120,16 @@ class App extends React.Component {
           name: "XYZ",
           industryType: "Financial Services",
           issuanceType: "Investment Fund",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "U.S.",
           status: "Closed",
           description:
             "As such, ABC naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "04192018",
+          dateOfCreation: "2019-11-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 2000000000,
+          totalIssuedShares: 200000000,
           freeFloat: 2000000,
           pricePerShare: 200,
           sourcingParty: {
@@ -145,16 +145,16 @@ class App extends React.Component {
           name: "Natural Gas Chamber",
           industryType: "Space",
           issuanceType: "Debt",
-          targetRaise: 230000000,
+          targetRaise: 23000000,
           preMoneyValuation: 1000000,
           amountRaised: 1000000,
           location: "U.S.",
           status: "In Progress",
           description:
             "As such, Alternative Gas Extraction naturally includes the traditional utilities associated with energy transport and management (coal transport trains, natural gas pipelines, electric transmission lines, etc.).",
-          dateOfCreation: "03172017",
+          dateOfCreation: "2019-08-24",
           countryOfIssuance: "US",
-          totalIssuedShares: 3000000000,
+          totalIssuedShares: 300000000,
           freeFloat: 3000000,
           pricePerShare: 300,
           sourcingParty: {
@@ -164,16 +164,29 @@ class App extends React.Component {
           issuer: { name: "David Warner", email: "davidwarner@gainx.com" },
           favorite: false
         }
-      ]
+      ],
+      selectedIssuanceId: null
     };
   }
+  clickIssuance = iId => {
+    this.setState({ selectedIssuanceId: iId });
+  };
   render() {
+    const selectIssuance = this.state.issuance.filter(
+      issua => issua.issuanceId === this.state.selectedIssuanceId
+    );
+    const finalIssuance =
+      selectIssuance.length === 0 ? this.state.issuance[0] : selectIssuance[0];
     return (
       <BrowserRouter>
         <div className="App">
           <Menu />
-          <Frame issuance={this.state.issuance} user={this.state.user} />
-          <DealInfo issuance={this.state.issuance} />
+          <Frame
+            issuance={this.state.issuance}
+            user={this.state.user}
+            clickIssuance={this.clickIssuance}
+          />
+          <DealInfo issuance={finalIssuance} />
         </div>
       </BrowserRouter>
     );

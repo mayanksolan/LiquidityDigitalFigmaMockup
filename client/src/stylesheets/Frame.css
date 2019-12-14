@@ -83,6 +83,7 @@ ul li {
   right: 84.72%;
   top: 0%;
   bottom: 0%;
+  cursor: pointer;
 }
 
 .tabs .section2 {
@@ -91,6 +92,7 @@ ul li {
   right: 69.44%;
   top: 0%;
   bottom: 0%;
+  cursor: pointer;
 }
 
 .tabs .section3 {
@@ -99,6 +101,7 @@ ul li {
   right: 57.12%;
   top: 0%;
   bottom: 0%;
+  cursor: pointer;
 }
 
 .tabs .section4 {
@@ -107,6 +110,7 @@ ul li {
   right: 41.84%;
   top: 0%;
   bottom: 0%;
+  cursor: pointer;
 }
 
 .section-name {
@@ -208,6 +212,10 @@ table {
 
 .table1Elem {
   width: 296px;
+}
+
+.ti-tr {
+  cursor: pointer;
 }
 
 th {

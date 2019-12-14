@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import TableItem from "./TableItem";
 
 export default class Table extends Component {
+  clickIssuance = iId => {
+    this.props.clickIssuance(iId);
+  };
   render() {
     return (
       <div>
@@ -29,7 +32,11 @@ export default class Table extends Component {
               </th>
             </tr>
             {this.props.issuance.map(issueItem => (
-              <TableItem key={issueItem.issuanceId} issueItem={issueItem} />
+              <TableItem
+                key={issueItem.issuanceId}
+                issueItem={issueItem}
+                clickIssuance={this.clickIssuance}
+              />
             ))}
           </tbody>
         </table>
