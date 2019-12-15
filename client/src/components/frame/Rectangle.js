@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Table from "./Table";
 
 export default class Rectangle extends Component {
@@ -24,3 +25,8 @@ export default class Rectangle extends Component {
     );
   }
 }
+
+Rectangle.propTypes = {
+  clickIssuance: PropTypes.func.isRequired,
+  issuance: PropTypes.array.isRequired
+};

@@ -1,7 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Highlights(props) {
-  //   console.log(props);
   const {
     targetRaise,
     amountRaised,
@@ -41,5 +41,9 @@ function Highlights(props) {
     </div>
   );
 }
+
+Highlights.propTypes = {
+  issuance: PropTypes.array.isRequired
+};
 
 export default Highlights;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class MenuItem extends Component {
   constructor(props) {
@@ -35,3 +36,9 @@ export default class MenuItem extends Component {
     );
   }
 }
+
+MenuItem.propTypes = {
+  name: PropTypes.string,
+  onClick: PropTypes.func,
+  isSelected: PropTypes.bool
+};

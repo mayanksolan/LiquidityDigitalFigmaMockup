@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "../../stylesheets/DealInfo.css";
 import Tabs from "./Tabs";
 import Highlights from "./Highlights";
@@ -26,3 +27,8 @@ export default class DealInfo extends Component {
     );
   }
 }
+
+DealInfo.propTypes = {
+  closeClicked: PropTypes.func.isRequired,
+  issuance: PropTypes.array.isRequired
+};

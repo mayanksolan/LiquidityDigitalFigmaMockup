@@ -61,6 +61,10 @@
   border: 1px solid #e0e0e0;
 }
 
+.di-tabs .di-section1 .di-coloured-line {
+  border: 1px solid #2345c7;
+}
+
 span:hover .di-coloured-line {
   border: 1px solid #2345c7;
 }

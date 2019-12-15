@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import TableItem from "./TableItem";
 
 export default class Table extends Component {
@@ -44,3 +45,8 @@ export default class Table extends Component {
     );
   }
 }
+
+Table.propTypes = {
+  clickIssuance: PropTypes.func.isRequired,
+  issuance: PropTypes.array.isRequired
+};

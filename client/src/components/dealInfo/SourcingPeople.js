@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function SourcingPeople(props) {
   return (
@@ -18,5 +19,9 @@ function SourcingPeople(props) {
     </div>
   );
 }
+
+SourcingPeople.propTypes = {
+  issuance: PropTypes.object.isRequired
+};
 
 export default SourcingPeople;

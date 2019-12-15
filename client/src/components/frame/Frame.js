@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "../../stylesheets/Frame.css";
 import User from "./User";
 import Tabs from "./Tabs";
@@ -22,3 +23,9 @@ export default class Frame extends Component {
     );
   }
 }
+
+Frame.propTypes = {
+  clickIssuance: PropTypes.func.isRequired,
+  user: PropTypes.array.isRequired,
+  issuance: PropTypes.array.isRequired
+};

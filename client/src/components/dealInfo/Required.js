@@ -1,6 +1,6 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
-import "react-perfect-scrollbar/dist/css/styles.css";
+import PropTypes from "prop-types";
 
 function Required(props) {
   const {
@@ -59,5 +59,9 @@ function Required(props) {
     </div>
   );
 }
+
+Required.propTypes = {
+  issuance: PropTypes.array.isRequired
+};
 
 export default Required;

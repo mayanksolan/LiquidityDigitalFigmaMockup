@@ -22,7 +22,6 @@ export default class Menu extends Component {
   render() {
     //let btn_class = this.state.black ? "blackButton" : "whiteButton";
     const email = "support@digital.com";
-
     return (
       <div className="menu-container">
         <img src={liquidity_logo} alt="liquidity logo" />
