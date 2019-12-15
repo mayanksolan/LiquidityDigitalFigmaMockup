@@ -14,16 +14,22 @@ export default class TableItem extends Component {
       location,
       status
     } = this.props.issueItem;
+
+    //converting number to million format
     const targetRaise1 = targetRaise / 1000000;
     const preMoneyValuation1 = preMoneyValuation / 1000000;
     const amountRaised1 = amountRaised / 1000000;
+
+    //deciding the color of the status dot
     const statIcon =
       status === "In Progress" ? (
         <i className="fas fa-circle cirBlue"></i>
       ) : (
         <i className="fas fa-circle cirGreen"></i>
       );
+
     return (
+      //onClick opens the DealInfo page
       <tr
         onClick={() => this.props.clickIssuance(issuanceId)}
         className="ti-tr"

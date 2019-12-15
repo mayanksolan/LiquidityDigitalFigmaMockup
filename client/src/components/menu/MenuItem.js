@@ -9,6 +9,7 @@ export default class MenuItem extends Component {
     };
   }
 
+  //function setting the hover flag when hovered
   hoverEvent = () => {
     this.setState({ hover_flag: !this.state.hover_flag });
   };
@@ -18,6 +19,8 @@ export default class MenuItem extends Component {
       background: "#ffffff",
       borderLeft: "5px solid white"
     };
+
+    //style to be done when the menu item is selected or hovered
     if (this.props.isSelected || this.state.hover_flag) {
       liStyle["background"] = "#FAFAFB";
       liStyle["borderLeft"] = "5px solid #aab8e6";

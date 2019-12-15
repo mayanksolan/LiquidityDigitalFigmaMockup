@@ -8,15 +8,20 @@ function Highlights(props) {
     preMoneyValuation,
     status
   } = props.issuance;
+
+  //converting number values to million format
   const targetRaise1 = targetRaise / 1000000;
   const preMoneyValuation1 = preMoneyValuation / 1000000;
   const amountRaised1 = amountRaised / 1000000;
+
+  // deciding the color of the status dot
   const statIcon =
     status === "In Progress" ? (
       <i className="fas fa-circle cirBlue"></i>
     ) : (
       <i className="fas fa-circle cirGreen"></i>
     );
+
   return (
     <div>
       <div className="high1">

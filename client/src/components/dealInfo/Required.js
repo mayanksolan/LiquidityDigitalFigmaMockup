@@ -11,7 +11,10 @@ function Required(props) {
     freeFloat,
     pricePerShare
   } = props.issuance;
+
+  //converting string to date format
   const dateOfCreation1 = new Date(dateOfCreation).toDateString().substring(4);
+
   return (
     <div className="req">
       <div className="req-head">Required</div>
