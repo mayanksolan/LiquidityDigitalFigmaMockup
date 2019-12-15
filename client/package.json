@@ -22,7 +22,7 @@
     "react-scrollbar": "^0.5.6"
   },
   "scripts": {
-    "start": "cross-env HTTPS=true react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
