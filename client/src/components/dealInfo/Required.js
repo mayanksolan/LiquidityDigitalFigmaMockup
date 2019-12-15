@@ -64,7 +64,7 @@ function Required(props) {
 }
 
 Required.propTypes = {
-  issuance: PropTypes.array.isRequired
+  issuance: PropTypes.object.isRequired
 };
 
 export default Required;

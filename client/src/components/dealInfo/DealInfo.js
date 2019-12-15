@@ -30,5 +30,5 @@ export default class DealInfo extends Component {
 
 DealInfo.propTypes = {
   closeClicked: PropTypes.func.isRequired,
-  issuance: PropTypes.array.isRequired
+  issuance: PropTypes.object.isRequired
 };

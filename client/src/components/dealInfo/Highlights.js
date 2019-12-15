@@ -48,7 +48,7 @@ function Highlights(props) {
 }
 
 Highlights.propTypes = {
-  issuance: PropTypes.array.isRequired
+  issuance: PropTypes.object.isRequired
 };
 
 export default Highlights;

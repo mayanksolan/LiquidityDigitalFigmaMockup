@@ -171,13 +171,10 @@ class App extends React.Component {
   }
 
   clickIssuance = iId => {
-    this.setState(
-      {
-        selectedIssuanceId: iId,
-        open: true
-      },
-      () => console.log(this.state.backgroundColor)
-    );
+    this.setState({
+      selectedIssuanceId: iId,
+      open: true
+    });
   };
   closeClicked = () => {
     this.setState({ selectedIssuanceId: null, open: false });
